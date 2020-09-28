@@ -13,8 +13,7 @@ input { display: block;
 label { float: left;
         width: 5em;
 		padding-right: 1em;
-        text-align: right; 
-}
+        text-align: right; }
 #submit { margin-left: 7em; }
 #details {display: none;}
 </style>
@@ -31,9 +30,8 @@ label { float: left;
 <input type="submit" value="Send information" id="submit">
 </form>
 <h1>JQuery</h1>
-<p> Many websites, including Amazon and Google, use JQuery, to provide interacteion and dynamic effects on web pages <a href="#" id="more">more</a></p>
+<p> Many websites, including Amazon and Google, use JQuery, to provide interaction and dynamic effects on web pages <a href="#" id="more">more</a></p>
 <div id="details">
-    
     <p> The JQuery API works along with JavaScript and provides easy ways to dynamically manipulate the CSS properties of elements, detect and react to events and animate elements on a web page, such as an image slideshow.</p>
 </div>
 <h1> Slideshow</h1>
@@ -60,8 +58,7 @@ function validateForm() {
     return true;
 }
     $(document).ready(function(){
-        $('#more').click(function(){
-            $('#details').toggle();
+        $('#more').click(function(){$('#details').toggle();
         });
     });
     
